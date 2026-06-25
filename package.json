@@ -1,5 +1,5 @@
 {
-  "name": "securestore",
+  "name": "@magnexis/securestore",
   "version": "1.0.1",
   "private": false,
   "type": "module",
