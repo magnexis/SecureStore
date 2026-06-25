@@ -979,8 +979,10 @@ impl VaultManager {
 
     pub fn delete_file(&mut self, id: &str) -> Result<VaultSnapshot, VaultError> {
         self.touch()?;
-        delete_blob(&blob_path(&self.files_dir, id))?;
         let vault = self.active_vault_mut()?;
+        let file = vault.files.iter().find(|item| item.id == id)
+            .ok_or_else(|| VaultError::Validation("Encrypted file not found.".into()))?;
+        delete_blob(&blob_path(&self.files_dir, &file.id))?;
         vault.files.retain(|item| item.id != id);
         push_activity(&mut vault.activity_log, "file_deleted", "file");
         self.persist_session()?;
