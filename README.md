@@ -74,7 +74,7 @@ No payment system or backend billing has been implemented yet.
 SecureStore includes Docker support for reproducible validation and frontend preview.
 
 ```bash
-docker build -t securestore:1.0.0 .
+docker build -t securestore:1.0.1 .
 docker compose up --build
 ```
 
@@ -93,7 +93,7 @@ Native Tauri desktop packaging should still be performed on the target OS or a C
 
 Release name: `SecureStore`
 
-Release tag: `v1.0.0`
+Release tag: `v1.0.1`
 
 See [Release Process](docs/RELEASE.md) for local and GitHub release steps.
 

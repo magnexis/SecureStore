@@ -17,7 +17,7 @@ The container is not the primary way to run the native desktop app. Tauri deskto
 ## Commands
 
 ```bash
-docker build -t securestore:1.0.0 .
+docker build -t securestore:1.0.1 .
 docker compose up --build
 ```
 

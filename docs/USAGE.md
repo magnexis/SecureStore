@@ -28,6 +28,6 @@ Choosing `Start over` resets SecureStore+ preview mode.
 
 ## Container Mode
 
-- `docker build -t securestore:1.0.0 .` builds the validation/preview image
+- `docker build -t securestore:1.0.1 .` builds the validation/preview image
 - `docker compose up --build` serves the frontend preview on `http://localhost:4173`
 - Use native Tauri commands for actual desktop app packaging

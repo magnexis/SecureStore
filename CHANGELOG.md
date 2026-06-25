@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.1
+
+### Bug Fixes
+
+- Fixed path traversal vulnerability in the vault entry delete endpoint allowing deletion of files outside the vault directory.
+
 ## 2026-04-10
 
 - Rebranded the desktop application and native metadata as SecureStore.

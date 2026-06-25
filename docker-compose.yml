@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: securestore:1.0.0
+    image: securestore:1.0.1
     container_name: securestore-preview
     ports:
       - "4173:4173"

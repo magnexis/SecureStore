@@ -18,7 +18,7 @@
 - Run `cargo test -p secure_vault_backend`
 - Run `npm run test:unit`
 - Run `npm run build` when possible
-- Run `docker build -t securestore:1.0.0 .` when container or release files change
+- Run `docker build -t securestore:1.0.1 .` when container or release files change
 - Update docs when flows, security assumptions, or setup steps change
 
 ## Git Hygiene
